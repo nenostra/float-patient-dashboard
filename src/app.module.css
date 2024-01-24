@@ -1,0 +1,35 @@
+/* Base styles (mobile view) */
+.layout {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 1rem;
+  grid-template-rows: 1fr;
+}
+
+.sidebar,
+.content,
+.bottomContent {
+  width: 100%;
+}
+
+@screen lg {
+  .layout {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-gap: 1rem;
+    grid-template-rows: auto auto 1fr;
+  }
+
+  .sidebar {
+    min-width: 300px;
+    grid-row: 1 / span 3; /* Sidebar spans all rows */
+  }
+
+  .content {
+    grid-row: 1 / span 2; /* Content takes the first two rows */
+  }
+
+  .bottomContent {
+    grid-row: 3; /* Bottom content takes the last row */
+  }
+}
