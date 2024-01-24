@@ -14,10 +14,10 @@ To get started with this project, follow these steps:
 npm install
 ```
 
-4. Start the application:
+2. Start the application:
 
 ```bash
 npm run dev
 ```
 
-5. Open your browser and navigate to [http://localhost:5173](http://localhost:5173) to view the application.
+3. Open your browser and navigate to [http://localhost:5173](http://localhost:5173) to view the application.
